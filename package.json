@@ -1,0 +1,22 @@
+{
+  "name": "testgoogletts",
+  "version": "1.0.0",
+  "description": "Me testing google tts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cduzpalau/testgoogletts.git"
+  },
+  "author": "Carles Duz Palau (cduzpalau)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cduzpalau/testgoogletts/issues"
+  },
+  "homepage": "https://github.com/cduzpalau/testgoogletts#readme",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.0.1"
+  }
+}
