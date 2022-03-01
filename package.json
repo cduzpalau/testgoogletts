@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/cduzpalau/testgoogletts#readme",
   "dependencies": {
-    "@google-cloud/text-to-speech": "^3.0.1"
+    "@google-cloud/text-to-speech": "^3.4.0"
   }
 }
