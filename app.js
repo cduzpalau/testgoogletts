@@ -1,3 +1,4 @@
+require("dotenv").config();
 const textToSpeech = require("@google-cloud/text-to-speech");
 const fs = require("fs");
 const util = require("util");
@@ -8,7 +9,9 @@ const client = new textToSpeech.TextToSpeechClient();
 const text = process.argv[2] || "hello how are you";
 const outputFilePrefix = process.argv[3] || "Prefix";
 const languagecode = process.argv[4] || "en-GB";
+// Voice options https://cloud.google.com/text-to-speech/docs/voices
 const voicename = process.argv[5] || "en-GB-Wavenet-A";
+// Gender depends on voice selected
 const gender = process.argv[6] || "MALE";
 
 //Audio encoding options https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize#AudioEncoding
@@ -42,8 +45,3 @@ const request = {
   }
   client.close();
 })();
-
-
-
-
-

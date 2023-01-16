@@ -107,3 +107,6 @@ dist
 *.mp3
 *.wav
 *.ogg
+
+#MAC file
+.DS_Store
